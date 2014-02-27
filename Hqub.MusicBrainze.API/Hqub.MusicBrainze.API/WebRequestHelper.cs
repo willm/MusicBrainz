@@ -50,7 +50,7 @@ namespace Hqub.MusicBrainze.API
             catch (Exception ex)
             {
                 if (APIGlobalSettings.GenerateCommunicationThrow)
-                    throw new Exception("Unknow result. " + ex.Message);
+                    throw new Exception("Unknown result. " + ex);
 
                 return default(T);
             }
